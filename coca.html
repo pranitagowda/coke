@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.rectangle {
+  padding-bottom: 0cqb;  
+  height: 250px;
+  width: 300px;
+  background-color: #eb8989;
+  transform:rotate(360deg);
+  animation:demo infinite;
+  animation-duration:10s;
+  background-image: url('https://tse2.mm.bing.net/th?id=OIP.ECBVbQh9nI0E1JVnGFjk9AHaHa&pid=Api&P=0');
+}
+@keyframes demo
+{
+0%{background-color:red; transform:rotate(0deg);};
+25%{ transform:rotate(90deg)};
+50%{background-color:orange; transform:rotate(180deg)};
+75%{ transform:rotate(270deg)};
+100%{background-color:green; transform:rotate(360deg)};
+}
+body{
+  /* background-color: #7c3636;*/
+   background-image: url('https://wallpapercave.com/wp/Jh04UT4.jpg'); 
+}
+h2
+{
+  text-align: center; color: #3a1b1b; font-family:Georgia, 'Times New Roman', Times, serif
+}
+p
+{
+    text-align: center; font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+   
+
+<h2>Coca-Cola</h2>
+<p  id = "coke"><b>Celebrate Your Last Year with a Bottle of Coca-Cola</b></p>
+<script>
+    function myFunction() {
+document.getElementById("coke").innerHTML = "Wish You a Happy New Year.";}
+</script>
+<button type="button" onclick="myFunction()">Click Me</button>
+<div class="rectangle"></div>
+
+</body>
+</html> 
